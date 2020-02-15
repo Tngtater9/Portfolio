@@ -43,7 +43,7 @@ figure, h1, h2{
     justify-content: center;
 }
 
-.project-links{
+.project-link{
     display: flex;
     justify-content: space-evenly;
 }
