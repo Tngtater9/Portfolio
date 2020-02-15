@@ -3,85 +3,27 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    margin: auto;
-    background-color: black;
-}
-
-.menu-icon{
-    position: relative;
-    left: 0;
-    justify-self: center;
-    align-self: center;
-}
-
-ul{
-    display: flex;
-    flex-direction: column;
-}
-
-li{
-    list-style-type: none;
-    color: white;
-}
-
-h2{
-    color: white;
-    
-}
-
-.profile, h1, h2{
+h1, .pro-title, .technology{
     text-align: center;
 }
 
-@media only screen and (max-width: 700px){
-    ul{
-        display: none;
-    }
+h4{
+    background-color: lightgray;
 }
 
+nav, div{
+    margin: auto;
+    background-color: grey;
+    color: white;
+}
+
+
+
 @media only screen and (min-width: 700px){
-    .menu-icon{
-        display: none;
-    }
-
-    h2{
-        display: none;
-    }
-    ul{
-        display:flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-    li{
-        margin-left: 125%;
-        margin-right: 125%;
-    }
-
-    .profile{
+    .pro-title{
         text-align: left;
     }
-    
-    .profile img{
-        height: 300px;
-        width: 300px;
-    }
-
     .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    .bio{
-        width: 40%;
-    }
-
-    h4{
-        text-align: center;
+        display:flex;
     }
 }
