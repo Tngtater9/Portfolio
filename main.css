@@ -53,13 +53,16 @@ h2{
     ul{
         display:flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start;
         width: 100%;
         margin: 0;
         padding: 0;
     }
     li{
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-left: 125%;
+        margin-right: 125%;
+    }
+    h4{
+        text-align: center;
     }
 }
