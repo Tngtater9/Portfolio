@@ -25,6 +25,11 @@ nav, div{
 
 @media only screen and (min-width: 700px){
     
+    .bio{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
    .grid-container{
        display: grid;
        grid-template-columns: 1fr 1fr;
