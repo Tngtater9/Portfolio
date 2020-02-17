@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Jamie Tater's Portfolio - About me</title>
 </head>
@@ -22,8 +23,8 @@
     </header>
     <main class="about">
         <summary>
-            <h4>Hello, I am Jamie.</h4>
-            <h4>I am a budding web developer making my way out of the retail world.</h4>
+            <h4 class="greeting">Hello, I am Jamie.</h4>
+            <h4 class="tagline">I am a budding web developer making my way out of the retail world.</h4>
         </summary>
         <div class="container">
             <figure class="main-fig">
@@ -42,7 +43,7 @@
           <figure class="project-fig">
               <img src="images/quiz-start.png" alt="quiz start page">
           </figure>
-          <p>This quiz allows the user to take a quiz one question at a time without skipping ahead. The user is also given feedback after every question. If they so choose the user can retake the quiz after the results are displayed.</p>
+          <p>This quiz allows the user to take a quiz one random question at a time without skipping ahead. The user is also given feedback after every question. If they so choose the user can retake the quiz after the results are displayed.</p>
             <figure class="technology">
                 <h5>Technologies Used</h5>
                 <img class="html" src="images/html5-icon.png" alt="HTML5 logo" height="60px" width="60px">
@@ -57,22 +58,13 @@
        
     </main>
     <main class="contacts">
-        <div class="contact-container">
-        <a
-        href="mailto:jtater1@gmail.com"></a><img src="images/email-icon.png" alt="Email" height="60px" width="60px"></a>
-        <p class="contact-label">Jtater1@gmail.com</p>
-        </div>
-        <br>
-        <div class="contact-container">
-        <a href="https://github.com/Tngtater9/"></a><img src="images/github-icon.png" alt="Github" height="60px" width="60px"></a>
-        <p class="contact-label">Tngtater9</p>
-        </div>
-        <br>
-        <div class="contact-container">
-        <a href="www.linkedin.com/in/jamie-tater-8b9804153"></a><img src="images/linkedin-icon.png" alt="LinkedIn" height="60px" width="60px"></a>
-        <p class="contact-label">Jamie Tater</p>
-        </div>
-        </main>
+        <a class="contact-label email-img" href="mailto:jtater1@gmail.com"><img src="images/email-icon.png" alt="Email" height="80px" width="80px"></a>
+        <a class="contact-label email-label" href="mailto:jtater1@gmail.com"><p class="contact-label">Jtater1@gmail.com</p></a>
+        <a class="contact-label github-img" href="https://github.com/Tngtater9/"><img src="images/github-icon.png" alt="Github" height="80px" width="80px"></a>
+        <a class="contact-label github-label" href="https://github.com/Tngtater9/"><p class="contact-label">Tngtater9</p></a>
+        <a class="contact-label linkedin-img" href="www.linkedin.com/in/jamie-tater-8b9804153"><img src="images/linkedin-icon.png" alt="LinkedIn" height="80px" width="80px"></a>
+        <a class="contact-label linkedin-label" href="www.linkedin.com/in/jamie-tater-8b9804153"><p class="contact-label">Jamie Tater</p></a>
+    </main>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
