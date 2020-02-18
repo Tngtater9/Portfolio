@@ -5,6 +5,9 @@
     background-color: #5990B2;
 }
 
+.hidden{
+    display: none;
+}
 
 h1{
     font-family: 'Yellowtail', cursive;
