@@ -11,6 +11,8 @@
 
 h1{
     font-family: 'Yellowtail', cursive;
+    font-size: 45pt;
+    margin: auto;
     
 }
 
@@ -19,7 +21,8 @@ body{
 }
 
 main{
-    margin: 0 10px
+    margin: 0 10px;
+    z-index: 1;
 }
 
 p{
@@ -31,6 +34,7 @@ p{
 a{
     color: #C1B5AC;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a:visited{
@@ -41,12 +45,17 @@ a:hover{
     color: #ffffff;
 }
 
-nav{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    margin: auto;
+.nav-links{
     background-color: #30081C;
+}
+
+nav{
+    width: 80px;
+    height: 50px;
+    margin: 0;
+    display: inline-block;
+    background-color: #30081C;
+    z-index: 2;
 }
 
 
@@ -59,26 +68,34 @@ nav{
 }
 
 .nav-menu{
-    display:none;
     background-color: #30081C;
 }
 
-/* .nav-menu{
-    display: flex;
-    flex-direction: column;
-    background-color: #30081C;
-} */
+.nav-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px 80%;
+    align-items: center;
+}
 
-li{
-    list-style-type: none;
-    color: #C1B5AC;
+.nav{
+    margin: 0;
+    display: block;
+    text-align: left;
+    background-color: #30081C;
+}
+
+.nav-title{
+    width: 100%
     background-color: #30081C;
 }
 
 h2{
     color: #C1B5AC;
     background-color: #30081C;
-    
+    width: 100%;
+    padding: 10.5px 80px 10.5px 0;
+    margin: 0;  
 }
 
 .menu-icon{
@@ -87,7 +104,8 @@ h2{
 
 img{
     border-radius: 5px;
-    margin: auto;
+    margin: 10px;
+    color: #C1B5AC;
 }
 
 figure, h1, h2{
@@ -95,7 +113,6 @@ figure, h1, h2{
 }
 
 .greeting{
-    padding-top: 5px;
 }
 
 h4{
@@ -176,24 +193,26 @@ h5 {
         display: none;
     }
 
-    .nav-menu{
-        display:flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        width: 100%;
+    ul{
         margin: 0;
-        padding: 0;
     }
 
     li{
-        margin-left: 125%;
-        margin-right: 125%;
+        margin: auto;
         font-weight: 600;
+    }
+
+    .nav-container{
+        display:block;
     }
 
     nav{
         margin: 20px 0;
         padding: 10px 0;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
     h4{
@@ -210,14 +229,15 @@ h5 {
         width: 200px;
     }
 
-    summary{
-        padding-left: 40%;
-        padding-right: 5%;   
+    h4{
+        display: inline;
     }
 
-    summary h4{
-        text-align: left;
+    summary{
+        width: 100%;
         display: inline;
+        text-align: center;
+        margin: 20px auto;
     }
 
     .container{
@@ -227,14 +247,14 @@ h5 {
 
     .bio{
         width: 40%;
-        padding-top: 40px;
     }
 
     .bio p{
-        padding-bottom: 40px;
+        padding-bottom: 10px;
     }
 
     h4{
+        margin: 20px auto;
         text-align: center;
     }
 
@@ -250,15 +270,18 @@ h5 {
     .grid-container{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-rows: 45% 5% 5% 45%;
         grid-column-gap: 10px;
     }
 
-    .project-fig{
+    .project-fig img{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
-        grid-row-end: 4;   
+        grid-row-end: 4; 
+        margin: 0;
+        justify-content: center;
+        align-items: center;
     }
 
     .project-links {
@@ -268,7 +291,8 @@ h5 {
         grid-row-end: 5;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 40px;
+        padding: 0;
+        height: 20px;
     }
 
     .technology {
@@ -281,6 +305,7 @@ h5 {
     
 
     .contacts{
+        margin: 100px 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -347,7 +372,7 @@ h5 {
 }
 @media only screen and (min-width: 1000px){
     h1{
-        font-size: 8vw;
+        font-size: 10vw;
     }
 
     h2{
@@ -391,4 +416,11 @@ h5 {
         margin: 20px;
     }
 
+    .technology {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        justify-content: space-between;
+    }
 }
