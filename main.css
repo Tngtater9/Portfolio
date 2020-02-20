@@ -1,18 +1,21 @@
 *{
-    box-sizing: border-box;
+    box-sizing: content-box;
     font-family: 'Lato', sans-serif;
     color: #30081C;
     background-color: #5990B2;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-wrap: break-word;
 }
 
 html, body {
     max-width: 100%;
-    overflow-wrap: break-word;
+
 }
 
 h1{
     font-family: 'Yellowtail', cursive;
-    font-size: 45pt;
+    font-size: 56px;
     margin: auto;
     
 }
@@ -57,18 +60,10 @@ nav{
     width: 80px;
     height: 50px;
     margin: 0;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     background-color: #30081C;
     z-index: 2;
-}
-
-
-
-.menu-icon{
-    position: relative;
-    left: 0;
-    justify-self: center;
-    align-self: center;
 }
 
 .nav-menu{
@@ -98,7 +93,7 @@ h2{
     color: #C1B5AC;
     background-color: #30081C;
     width: 100%;
-    padding: 10.5px 80px 10.5px 0;
+    padding: 10.5px 0;
     margin: 0;  
 }
 
@@ -108,7 +103,6 @@ h2{
 
 img{
     border-radius: 5px;
-    margin: 10px;
     color: #C1B5AC;
 }
 
@@ -117,7 +111,7 @@ figure, h1, h2{
 }
 
 h4{
-    margin: 20px 0 20px;
+    margin: 20px 0;
     font-size: 18px;
 }
 
@@ -139,7 +133,15 @@ summary{
 .technology{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 60px 60px;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech-used{
+    object-fit: cover;
 }
 
 h5 {
@@ -147,6 +149,7 @@ h5 {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    text-align: center;
 }
 
 .html {
@@ -176,6 +179,7 @@ h5 {
 .project-links{
     display: flex;
     justify-content: space-evenly;
+    margin: 10px;
 }
 
 
@@ -191,9 +195,6 @@ h5 {
 }
 
 @media only screen and (min-width: 700px){
-    .menu-icon{
-        display: none;
-    }
 
     h2{
         display: none;
@@ -218,11 +219,13 @@ h5 {
         display:flex;
         flex-direction: row;
         justify-content: space-evenly;
+        align-items: center;
         width: 100%;
     }
 
     h4{
         margin: 0;
+        display: inline;
     }
 
     .main-fig{
@@ -235,14 +238,10 @@ h5 {
         width: 200px;
     }
 
-    h4{
-        display: inline;
-    }
-
     summary{
         display: inline;
         text-align: center;
-        margin: 20px auto;
+        margin: 20px auto 20px 10px;
     }
 
     .container{
@@ -263,11 +262,6 @@ h5 {
         text-align: center;
     }
 
-    .project-fig img{
-        height: 100%;
-        width: 100%;
-    }
-
     .project-desc{
         margin: 0;
     }
@@ -276,7 +270,11 @@ h5 {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 45% 5% 5% 45%;
-        grid-column-gap: 10px;
+    }
+
+    .project-title{
+        margin: auto;
+        text-align: center;
     }
 
     .project-fig img{
@@ -294,10 +292,9 @@ h5 {
         grid-column-end: 2;
         grid-row-start: 4;
         grid-row-end: 5;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding: 0;
-        height: 20px;
     }
 
     .technology {
