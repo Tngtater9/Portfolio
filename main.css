@@ -5,8 +5,9 @@
     background-color: #5990B2;
 }
 
-.hidden{
-    display: none;
+html, body {
+    max-width: 100%;
+    overflow: hidden;
 }
 
 h1{
@@ -18,16 +19,19 @@ h1{
 
 body{
     margin: 0;
+    padding: 0;
 }
 
 main{
-    margin: 0 10px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
     z-index: 1;
 }
 
 p{
     font-weight: 400;
-    margin: 20px 0;
+    margin: 20px 10px;
     
 }
 
@@ -112,12 +116,13 @@ figure, h1, h2{
     text-align: center;
 }
 
-.greeting{
+h4{
+    margin: 20px 0 20px;
+    font-size: 18px;
 }
 
-h4{
-    margin: 20px 0 20px 20px;
-    font-size: 18px;
+summary{
+    margin: 20px 20px;
 }
 
 .project-title{
@@ -128,6 +133,7 @@ h4{
 
 .project-fig{
     margin: 0;
+    padding: 0;
 }
 
 .technology{
@@ -234,7 +240,6 @@ h5 {
     }
 
     summary{
-        width: 100%;
         display: inline;
         text-align: center;
         margin: 20px auto;
