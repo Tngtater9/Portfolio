@@ -16,6 +16,7 @@ function showMenu () {
 function hideMenuIcon () {
     if(screen.width > 700){
         $('.menu-icon').hide();
+        $('.nav').show();
     }
 }
 function hideMenu () {
@@ -61,13 +62,3 @@ function handlePortfolio () {
 }
 
 $(handlePortfolio());
-var docWidth = document.documentElement.offsetWidth;
-
-[].forEach.call(
-  document.querySelectorAll('*'),
-  function(el) {
-    if (el.offsetWidth > docWidth) {
-      console.log(el);
-    }
-  }
-);
