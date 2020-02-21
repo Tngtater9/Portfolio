@@ -116,7 +116,7 @@ h4{
     font-size: 18px;
 }
 
-summary{
+article{
     margin: 20px 20px;
 }
 
@@ -239,7 +239,7 @@ h5 {
         width: 200px;
     }
 
-    summary{
+    article{
         display: inline;
         text-align: center;
         margin: 20px auto 20px 10px;
