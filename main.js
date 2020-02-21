@@ -4,11 +4,13 @@ function showMenu () {
     }
     $('.menu-icon').click(function(){
         $('.nav').show();
+        $('.menu-icon').hide();
         $('nav').focus();
     });
     $('nav').blur(function(){
         console.log("blur works");
         hideMenu();
+        $('.menu-icon').show();
     });
 }
 function hideMenuIcon () {

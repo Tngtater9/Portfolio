@@ -5,6 +5,7 @@
     background-color: #5990B2;
     overflow-x: hidden;
     overflow-wrap: break-word;
+    z-index: 1;
 }
 
 html, body {
@@ -24,7 +25,7 @@ body{
     padding: 0;
 }
 
-main{
+section{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -59,8 +60,8 @@ nav{
     width: 80px;
     height: 50px;
     margin: 0;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    overflow: none;
     background-color: #30081C;
     z-index: 2;
 }
@@ -98,6 +99,7 @@ h2{
 
 .menu-icon{
     background-color: #30081C;
+    margin-top: 10%;
 }
 
 img{
