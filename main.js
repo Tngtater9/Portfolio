@@ -8,7 +8,6 @@ function showMenu () {
         $('nav').focus();
     });
     $('nav').blur(function(){
-        console.log("blur works");
         hideMenu();
         $('.menu-icon').show();
     });
