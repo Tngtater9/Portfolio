@@ -8,8 +8,10 @@ function showMenu () {
         $('nav').focus();
     });
     $('nav').blur(function(){
+        if(screen.width < 700){
         hideMenu();
         $('.menu-icon').show();
+        }
     });
 }
 function hideMenuIcon () {
