@@ -271,7 +271,7 @@ h5 {
     .grid-container{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 120px 2px 2px 150px;
+        grid-template-rows: 125px 2px 2px 150px;
     }
 
     .project-title{
