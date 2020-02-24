@@ -199,6 +199,10 @@ h5 {
 
 @media only screen and (min-width: 700px){
 
+    .menu-icon{
+        display: contents;
+    }
+
     h2{
         display: none;
     }

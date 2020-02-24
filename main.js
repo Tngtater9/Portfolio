@@ -1,7 +1,7 @@
 function showMenu () {
-    if(screen.width > 700){
-        $('.nav').show();
-    }
+    // if(screen.width > 700){
+    //     $('.nav').show();
+    // }
     $('.menu-icon').click(function(){
         $('.nav').show();
         $('.menu-icon').hide();
@@ -17,11 +17,10 @@ function showMenu () {
 function hideMenuIcon () {
     if(screen.width > 700){
         $('.menu-icon').hide();
-        $('.nav').show();
     }
 }
 function hideMenu () {
-        $('.nav').hide();
+     $('.nav').hide();
 }
 function handleAbout () {
     $('.nav-about').click(showAbout);
@@ -53,10 +52,9 @@ function handleContacts() {
 
 
 function handlePortfolio () {
-    hideMenu();
+    showAbout();
     hideMenuIcon();
     showMenu();
-    showAbout();
     handleAbout();
     handleProjects();
     handleContacts();
