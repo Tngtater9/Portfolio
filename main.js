@@ -1,7 +1,21 @@
 function showMenu () {
-    // if(screen.width > 700){
-    //     $('.nav').show();
-    // }
+    if(screen.width < 700){
+        $('.nav').hide();
+        $('.menu-icon').show();
+    }
+    $( window ).on( "orientationchange", function( event ) {
+        if(screen.width > 700){
+            $('.nav').show();
+            $('.menu-icon').hide();
+        }else if(screen.width < 700){
+            $('.nav').hide();
+            $('.menu-icon').show();
+        }
+      });
+
+    if(screen.width > 700){
+        $('.nav').show();
+    }
     $('.menu-icon').click(function(){
         $('.nav').show();
         $('.menu-icon').hide();
