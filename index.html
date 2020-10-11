@@ -1,144 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <title>Jamie Tater's Portfolio - About me</title>
-</head>
-<body>
-    <header>
-        <h1>Jamie A Tater</h1>
-        <div class="nav-container">
-            <nav tabindex="0">
-                <img class="menu-icon" src="images/menu-iconp.png" alt="menu">
-                <a class="nav nav-about nav-links">About</a>    
-                <a class="nav nav-projects nav-links">Projects</a>
-                <a class="nav nav-contacts nav-links">Contacts</a>
-            </nav>
-            <h2>About</h2>
-        </div>
-    </header>
-    <section class="about">
-        <article>
-            <h4 class="greeting">Hello, I am Jamie.</h4>
-            <h4 class="tagline">I am a budding web developer making my way out of the retail world.</h4>
-        </article>
-        <div class="container">
-            <figure class="main-fig">
-                <img src="images/profilepic.jpg" alt="Profile picture" height=120 width=120>
-            </figure>
-            <section class="bio">
-                <p>I am a current student of Thinkful’s Software Engineering Immersion bootcamp. I started working with the web in grade school and learned to love solving complex problems. I always work to optimize efficiency and provide an organized structure to my code.</p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="main.css" />
+		<title>Jamie Tater's Portfolio - About me</title>
+	</head>
+	<body>
+		<header>
+			<h1>Jamie A Tater</h1>
+			<div class="nav-container">
+				<nav tabindex="0">
+					<img class="menu-icon" src="images/menu-iconp.png" alt="menu" />
+					<a class="nav nav-about nav-links">About</a>
+					<a class="nav nav-projects nav-links">Projects</a>
+					<a class="nav nav-contacts nav-links">Contacts</a>
+				</nav>
+				<h2>About</h2>
+			</div>
+		</header>
+		<section class="about">
+			<article>
+				<h4 class="greeting">Hello, I am Jamie.</h4>
+				<h4 class="tagline">
+					I am a budding web developer making my way out of the retail world.
+				</h4>
+			</article>
+			<div class="container">
+				<figure class="main-fig">
+					<img
+						src="images/profilepic.jpg"
+						alt="Profile picture"
+						height="120"
+						width="120"
+					/>
+				</figure>
+				<section class="bio">
+					<p>
+						I am a current student of Thinkful’s Software Engineering Immersion
+						bootcamp. I started working with the web in grade school and learned
+						to love solving complex problems. I always work to optimize
+						efficiency and provide an organized structure to my code.
+					</p>
+					<p>
+						When I am not immersed in course work, I work on side projects,
+						which include making artwork, creating games, and helping my local
+						discount auto glass business with their web presence. Otherwise, I
+						am reading up on ways to create exciting and accessible web pages.
+					</p>
+				</section>
+			</div>
+		</section>
+		<section class="projects">
+			<h4 class="project-title">Dev.it</h4>
+			<div class="grid-container">
+				<figure class="project-fig">
+					<a
+						href="https://capstone11.vercel.app/"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						<img
+							src="images/devitlanding.png"
+							alt="Dev.it Landing Page"
+							width="280"
+							height="120"
+						/>
+					</a>
+				</figure>
+				<p class="project-desc">
+					This app was created to connect businesses with freelancers to help
+					with coding problems. With Dev.it the user can log in and if they are
+					a business they can search for a freelancer by skill and look at the
+					offers they made. If the user is a freelancer they can look at all of
+					their offers and accept or deny them. When an offer is submitted the
+					business and freelancer are able to message each other. This was a
+					full stack project created over a month with a team following SCRUM
+					methodology.
+				</p>
+				<div class="technology">
+					<h5>Technologies Used</h5>
+					<div class="tech-box">
+						<div class="tech-icons">
+							<img
+								class="tech-used html"
+								src="images/html5-icon.png"
+								alt="HTML5 logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used js"
+								src="images/js-icon.png"
+								alt="JavaScript logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used css"
+								src="images/css-icon.png"
+								alt="CSS logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used react"
+								src="images/react_icon.png"
+								alt="react logo"
+								width="60"
+								height="60"
+							/>
+						</div>
+						<div class="tech-icons">
+							<h6 class="write-in-tech">Node.js</h6>
+							<h6 class="write-in-tech">Express</h6>
+							<h6 class="write-in-tech">PostgreSQL</h6>
+						</div>
+					</div>
+				</div>
+				<aside class="project-links">
+					<a
+						class="project-link"
+						href="https://capstone11.vercel.app/"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the App</a
+					>
+					<a
+						class="project-link"
+						href="https://github.com/mjstthomas/capstone11"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the Client Repo</a
+					>
+					<a
+						class="project-link server"
+						href="https://github.com/ttilley02/devit"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the API Repo</a
+					>
+				</aside>
+			</div>
+			<hr size="2" width="75%" />
+			<br />
 
-                <p>When I am not immersed in course work, I work on side projects, which include making artwork, creating games, and helping my local discount auto glass business with their web presence. Otherwise, I am reading up on ways to create exciting and accessible web pages.</p>
-            </section>
-        </div>
-    </section>
-    <section class="projects">
-        <h4 class="project-title">MAV (Mobile Appointment Viewer)</h4>
-        <div class="grid-container">  
-            <figure class="project-fig">
-                <a href="https://mav-client.vercel.app/" rel="noopener noreferrer" target="_blank">
-                    <img src="images/MAVdemo.jpg" alt="MAV popup demo" width="280" height="120">
-                </a>
-            </figure>
-            <p class="project-desc">This app was created for a mobile auto glass repair service. With MAV the user is able to log in and view appointments for a given day. Numbered markers are used to show what order the appointments happen in. From the main view the user can click on the "+" to start adding an appointment. The first step lets the user search for the address and the second step lets the user fill in details. If the user wants to start over they can click on the new appointment marker, indicated by the "+", and the popup will link to the main screen. To view an existing appointment the user can click on a marker and the popup will show minimal details. To view the full details the user clicks on the "Details..." link in the popup. While viewing the details the user can delete or modify the appointment.</p>
-            <div class="technology">
-                <h5>Technologies Used</h5>
-                <div class="mav-tech-box">
-                    <div class="mav-tech-icons">
-                        <img class="tech-used html" src="images/html5-icon.png" alt="HTML5 logo" width="60" height="60">
-                        <img class="tech-used js" src="images/js-icon.png" alt="JavaScript logo" width="60" height="60">
-                        <img class="tech-used css" src="images/css-icon.png" alt="CSS logo" width="60" height="60">
-                        <img class="tech-used react" src="images/react_icon.png" alt="react logo" width="60" height="60">
-                    </div>
-                    <div class="mav-tech-icons">
-                    <h6 class="write-in-tech">Mapbox GL JS</h6>
-                    <h6 class="write-in-tech">Express</h6>
-                    <h6 class="write-in-tech">PostgreSQL</h6>
-                    </div>
-                </div>
-            </div>
-            <aside class="mav-project-links">
-                <a href="https://mav-client.vercel.app/" rel="noopener noreferrer" target="_blank">To the app</a>
-                <a href="https://github.com/Tngtater9/MAV-Client" rel="noopener noreferrer" target="_blank">To the client repo</a>
-                <a class="mav-server" href="https://github.com/Tngtater9/mav-server" rel="noopener noreferrer" target="_blank">To the API repo</a>
-            </aside>
-        </div>
-        <hr size="2" width="75%">
-        <br>
-        <h4 class="project-title">Noteful</h4>
-        <div class="grid-container">  
-            <figure class="project-fig">
-                <a href="https://noteful-app-eta.now.sh/" rel="noopener noreferrer" target="_blank">
-                    <img src="images/noteful.png" alt="Noteful demo" width="280" height="120">
-                </a>
-            </figure>
-            <p class="project-desc">A lightweight note taking application. The user can create folders to hold the notes they create.</p>
-            <div class="technology">
-                <h5>Technologies Used</h5>
-                <div class="mav-tech-box">
-                    <div class="mav-tech-icons">
-                        <img class="tech-used html" src="images/html5-icon.png" alt="HTML5 logo" width="60" height="60">
-                        <img class="tech-used js" src="images/js-icon.png" alt="JavaScript logo" width="60" height="60">
-                        <img class="tech-used css" src="images/css-icon.png" alt="CSS logo" width="60" height="60">
-                        <img class="tech-used react" src="images/react_icon.png" alt="react logo" width="60" height="60">
-                    </div>
-                    <div class="mav-tech-icons">
-                    <h6 class="write-in-tech">Express</h6>
-                    <h6 class="write-in-tech">PostgreSQL</h6>
-                    </div>
-                </div>
-            </div>
-            <aside class="mav-project-links">
-                <a href="https://noteful-app-eta.now.sh/" rel="noopener noreferrer" target="_blank">To the app</a>
-                <a href="https://github.com/Tngtater9/Noteful" rel="noopener noreferrer" target="_blank">To the client repo</a>
-                <a class="mav-server" href="https://github.com/Tngtater9/noteful-server" rel="noopener noreferrer" target="_blank">To the API repo</a>
-            </aside>
-        </div>
-        <hr size="2" width="75%">
-        <br>
-        <h4 class="project-title">This Sounds Live</h4>
-        <div class="grid-container">  
-            <figure class="project-fig">
-                <a href="https://jroberts-68.github.io/This-Sounds-Live/" rel="noopener noreferrer" target="_blank">
-                    <img src="images/this-sounds-live.png" alt="This Sounds Live start page" width="280" height="120">
-                </a>
-            </figure>
-            <p class="project-desc">This Sounds Live allows the user to find events, through Ticketmaster, for the currently playing artist on their Spotify. The user also has the option to search events without Spotify.</p>
-            <div class="technology">
-                <h5>Technologies Used</h5>
-                <div class="mav-tech-box">
-                    <div class="mav-tech-icons">
-                        <img class="tech-used html" src="images/html5-icon.png" alt="HTML5 logo" width="60" height="60">
-                        <img class="tech-used js" src="images/js-icon.png" alt="JavaScript logo" width="60" height="60">
-                        <img class="tech-used css" src="images/css-icon.png" alt="CSS logo" width="60" height="60">
-                        <img class="tech-used jquery" src="images/jquery-icon.png" alt="react logo" width="60" height="60">
-                    </div>
-                    <div class="mav-tech-icons">
-                    <h6 class="write-in-tech">MomentJS</h6>
-                    </div>
-                </div>
-            </div>
-            <aside class="mav-project-links">
-                <a href="https://jroberts-68.github.io/This-Sounds-Live/" rel="noopener noreferrer" target="_blank">To the app</a>
-                <a href="https://github.com/JRoberts-68/This-Sounds-Live" rel="noopener noreferrer" target="_blank">To the client repo</a>
-            </aside>
-        </div>
-        <br>
-    </section>
-    <section class="contacts">
-        <a class="contact-label email-img" href="mailto:jtater1@gmail.com" rel="noopener noreferrer" target="_blank"><img src="images/email-icon.png" alt="Email"></a>
-        <a class="contact-label email-label" href="mailto:jtater1@gmail.com" rel="noopener noreferrer" target="_blank">Jtater1@gmail.com</a>
-        <a class="contact-label github-img" href="https://github.com/Tngtater9/" rel="noopener noreferrer" target="_blank"><img src="images/github-icon.png" alt="Github"></a>
-        <a class="contact-label github-label" href="https://github.com/Tngtater9/" rel="noopener noreferrer" target="_blank">Tngtater9</a>
-        <a class="contact-label linkedin-img" href="https://www.linkedin.com/in/jamie-tater" rel="noopener noreferrer" target="_blank"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
-        <a class="contact-label linkedin-label" href="https://www.linkedin.com/in/jamie-tater" rel="noopener noreferrer" target="_blank">Jamie Tater</a>
-    </section>
-    <script src="jquery.js"></script>
-    <script src="main.js"></script>
-</body>
+			<h4 class="project-title">MAV (Mobile Appointment Viewer)</h4>
+			<div class="grid-container">
+				<figure class="project-fig">
+					<a
+						href="https://mav-client.vercel.app/"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						<img
+							src="images/MAVdemo.jpg"
+							alt="MAV popup demo"
+							width="280"
+							height="120"
+						/>
+					</a>
+				</figure>
+				<p class="project-desc">
+					This app was created for a mobile auto glass repair service. With MAV
+					the user is able to log in and view appointments for a given day.
+					Numbered markers are used to show what order the appointments happen
+					in. From the main view the user can click on the "+" to start adding
+					an appointment. The first step lets the user search for the address
+					and the second step lets the user fill in details. If the user wants
+					to start over they can click on the new appointment marker, indicated
+					by the "+", and the popup will link to the main screen. To view an
+					existing appointment the user can click on a marker and the popup will
+					show minimal details. To view the full details the user clicks on the
+					"Details..." link in the popup. While viewing the details the user can
+					delete or modify the appointment.
+				</p>
+				<div class="technology">
+					<h5>Technologies Used</h5>
+					<div class="tech-box">
+						<div class="tech-icons">
+							<img
+								class="tech-used html"
+								src="images/html5-icon.png"
+								alt="HTML5 logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used js"
+								src="images/js-icon.png"
+								alt="JavaScript logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used css"
+								src="images/css-icon.png"
+								alt="CSS logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used react"
+								src="images/react_icon.png"
+								alt="react logo"
+								width="60"
+								height="60"
+							/>
+						</div>
+						<div class="tech-icons">
+							<h6 class="write-in-tech">Mapbox GL JS</h6>
+							<h6 class="write-in-tech">Express</h6>
+							<h6 class="write-in-tech">PostgreSQL</h6>
+						</div>
+					</div>
+				</div>
+				<aside class="project-links">
+					<a
+						class="project-link"
+						href="https://mav-client.vercel.app/"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the App</a
+					>
+					<a
+						class="project-link"
+						href="https://github.com/Tngtater9/MAV-Client"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the Client Repo</a
+					>
+					<a
+						class="project-link server"
+						href="https://github.com/Tngtater9/mav-server"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the API Repo</a
+					>
+				</aside>
+			</div>
+			<hr size="2" width="75%" />
+			<br />
+			<h4 class="project-title">Noteful</h4>
+			<div class="grid-container">
+				<figure class="project-fig">
+					<a
+						href="https://noteful-app-eta.now.sh/"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						<img
+							src="images/noteful.png"
+							alt="Noteful demo"
+							width="280"
+							height="120"
+						/>
+					</a>
+				</figure>
+				<p class="project-desc">
+					A lightweight note taking application. The user can create folders to
+					hold the notes they create.
+				</p>
+				<div class="technology">
+					<h5>Technologies Used</h5>
+					<div class="tech-box">
+						<div class="tech-icons">
+							<img
+								class="tech-used html"
+								src="images/html5-icon.png"
+								alt="HTML5 logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used js"
+								src="images/js-icon.png"
+								alt="JavaScript logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used css"
+								src="images/css-icon.png"
+								alt="CSS logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used react"
+								src="images/react_icon.png"
+								alt="react logo"
+								width="60"
+								height="60"
+							/>
+						</div>
+						<div class="tech-icons">
+							<h6 class="write-in-tech">Express</h6>
+							<h6 class="write-in-tech">PostgreSQL</h6>
+						</div>
+					</div>
+				</div>
+				<aside class="project-links">
+					<a
+						class="project-link"
+						href="https://noteful-app-eta.now.sh/"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the App</a
+					>
+					<a
+						class="project-link"
+						href="https://github.com/Tngtater9/Noteful"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the Client Repo</a
+					>
+					<a
+						class="project-link server"
+						href="https://github.com/Tngtater9/noteful-server"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the API Repo</a
+					>
+				</aside>
+			</div>
+			<hr size="2" width="75%" />
+			<br />
+			<h4 class="project-title">This Sounds Live</h4>
+			<div class="grid-container">
+				<figure class="project-fig">
+					<a
+						href="https://jroberts-68.github.io/This-Sounds-Live/"
+						rel="noopener noreferrer"
+						target="_blank"
+					>
+						<img
+							src="images/this-sounds-live.png"
+							alt="This Sounds Live start page"
+							width="280"
+							height="120"
+						/>
+					</a>
+				</figure>
+				<p class="project-desc">
+					This Sounds Live allows the user to find events, through Ticketmaster,
+					for the currently playing artist on their Spotify. The user also has
+					the option to search events without Spotify.
+				</p>
+				<div class="technology">
+					<h5>Technologies Used</h5>
+					<div class="tech-box">
+						<div class="tech-icons">
+							<img
+								class="tech-used html"
+								src="images/html5-icon.png"
+								alt="HTML5 logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used js"
+								src="images/js-icon.png"
+								alt="JavaScript logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used css"
+								src="images/css-icon.png"
+								alt="CSS logo"
+								width="60"
+								height="60"
+							/>
+							<img
+								class="tech-used jquery"
+								src="images/jquery-icon.png"
+								alt="react logo"
+								width="60"
+								height="60"
+							/>
+						</div>
+						<div class="tech-icons">
+							<h6 class="write-in-tech">MomentJS</h6>
+						</div>
+					</div>
+				</div>
+				<aside class="project-links">
+					<a
+						class="project-link"
+						href="https://jroberts-68.github.io/This-Sounds-Live/"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the App</a
+					>
+					<a
+						class="project-link"
+						href="https://github.com/JRoberts-68/This-Sounds-Live"
+						rel="noopener noreferrer"
+						target="_blank"
+						>To the Client Repo</a
+					>
+				</aside>
+			</div>
+			<br />
+		</section>
+		<section class="contacts">
+			<a
+				class="contact-label email-img"
+				href="mailto:jtater1@gmail.com"
+				rel="noopener noreferrer"
+				target="_blank"
+				><img src="images/email-icon.png" alt="Email"
+			/></a>
+			<a
+				class="contact-label email-label"
+				href="mailto:jtater1@gmail.com"
+				rel="noopener noreferrer"
+				target="_blank"
+				>Jtater1@gmail.com</a
+			>
+			<a
+				class="contact-label github-img"
+				href="https://github.com/Tngtater9/"
+				rel="noopener noreferrer"
+				target="_blank"
+				><img src="images/github-icon.png" alt="Github"
+			/></a>
+			<a
+				class="contact-label github-label"
+				href="https://github.com/Tngtater9/"
+				rel="noopener noreferrer"
+				target="_blank"
+				>Tngtater9</a
+			>
+			<a
+				class="contact-label linkedin-img"
+				href="https://www.linkedin.com/in/jamie-tater"
+				rel="noopener noreferrer"
+				target="_blank"
+				><img src="images/linkedin-icon.png" alt="LinkedIn"
+			/></a>
+			<a
+				class="contact-label linkedin-label"
+				href="https://www.linkedin.com/in/jamie-tater"
+				rel="noopener noreferrer"
+				target="_blank"
+				>Jamie Tater</a
+			>
+		</section>
+		<script src="jquery.js"></script>
+		<script src="main.js"></script>
+	</body>
 </html>
