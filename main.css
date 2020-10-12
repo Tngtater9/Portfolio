@@ -24,7 +24,8 @@ body {
 	padding: 0;
 }
 
-section {
+.bio {
+	text-align: left;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -38,8 +39,12 @@ p {
 }
 
 hr {
-	border-style: outset;
-	border-color: rgb(116, 65, 90);
+	height: 1px;
+	width: 75%;
+	margin: 1.5em auto;
+	background-color: #30081c;
+	border-style: solid;
+	border-color: #30081c;
 }
 
 a {
@@ -99,7 +104,7 @@ nav {
 	background-color: #30081c;
 }
 
-h2 {
+.mobile-heading {
 	color: #c1b5ac;
 	background-color: #30081c;
 	width: 100%;
@@ -143,9 +148,18 @@ article {
 	margin: 1.25em 1.25em;
 }
 
+.project-title {
+	margin: 0.5em 0.75em 1em;
+}
+
 .project-fig {
-	margin: 0;
+	width: fit-content;
+	margin: 0 auto;
 	padding: 0;
+}
+
+.project-desc {
+	text-align: center;
 }
 
 .tech-used {
@@ -187,12 +201,12 @@ h5 {
 .project-links {
 	display: flex;
 	justify-content: space-evenly;
-	margin: 0.625em;
 }
 
 .write-in-tech {
 	font-size: 1rem;
-	color: rgb(116, 65, 90);
+	color: #30081c;
+	margin: 1em 0;
 }
 
 .contacts {
@@ -206,17 +220,29 @@ h5 {
 	justify-self: center;
 }
 
+.alt-heading {
+	display: none;
+}
+
 @media only screen and (min-width: 750px) {
+	.mobile-heading {
+		display: none;
+	}
+
 	.menu-icon {
 		display: contents;
 	}
 
 	h1 {
-		font-size: 5rem;
+		font-size: 7rem;
 	}
 
-	h2 {
-		display: none;
+	.alt-heading {
+		font-size: 4rem;
+		color: #30081c;
+		width: max-content;
+		padding: 0;
+		margin: 1em;
 	}
 
 	h4 {
@@ -248,6 +274,7 @@ h5 {
 	}
 
 	.main-fig {
+		margin: auto;
 		text-align: left;
 		align-self: center;
 	}
@@ -265,12 +292,10 @@ h5 {
 
 	.container {
 		width: 100%;
-		display: flex;
-		justify-content: space-evenly;
-	}
-
-	.bio {
-		width: 40%;
+		display: grid;
+		align-items: center;
+		grid-template-columns: repeat(2, 50%);
+		justify-content: center;
 	}
 
 	.bio p {
@@ -282,14 +307,15 @@ h5 {
 		grid-column-end: 2;
 		grid-row-start: 2;
 		grid-row-end: 3;
-		margin: 0 0 2em;
+		margin: 0;
+		text-align: left;
 	}
 
 	.grid-container {
 		display: grid;
 		margin: 1em;
 		height: 100%;
-		padding: 4em;
+		padding: 0 4em;
 		grid-gap: 1em;
 		grid-template-columns: repeat(2, 50%);
 		grid-template-rows: repeat(2, max-content);
