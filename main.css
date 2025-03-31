@@ -274,9 +274,9 @@ h5 {
 	}
 
 	.main-fig {
-		margin: 2rem;
+		margin: auto;
 		text-align: left;
-		align-self: flex-start;
+		align-self: center;
 	}
 
 	.main-fig img {
