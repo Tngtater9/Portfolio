@@ -123,8 +123,8 @@ nav {
 }
 
 .main-fig > img:hover {
-	height: 240px;
-	width: 240px;
+	height: 600px;
+	width: 600px;
 }
 
 img {
@@ -280,8 +280,8 @@ h5 {
 	}
 
 	.main-fig img {
-		height: 200px;
-		width: 200px;
+		height: 540px;
+		width: 540px;
 	}
 
 	article {
